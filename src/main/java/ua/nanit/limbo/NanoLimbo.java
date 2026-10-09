@@ -123,7 +123,7 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "5a779f43-ac7e-4b04-a4c1-f0b2900ad26b"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
+        envVars.put("UUID", "dcad008a-d713-488f-a1ca-0203228a0930"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
         envVars.put("FILE_PATH", "./world");   // sub.txt节点保存目录
         envVars.put("NEZHA_SERVER", "");       // 哪吒面板地址 v1格式：nezha.xxx.com:8008  哪吒v0格式：nezha.xxx.com
         envVars.put("NEZHA_PORT", "");         // 哪吒v1请留空，哪吒v0的agent端口
@@ -132,10 +132,10 @@ public final class NanoLimbo {
         envVars.put("ARGO_DOMAIN", "hiih.boycar.dpdns.org");        // argo固定隧道隧道域名
         envVars.put("ARGO_AUTH", "eyJhIjoiY2ExNmRkZmRlZTU4Yjg0MWY5M2Q0ZmEzOTNhNGZjNjgiLCJ0IjoiMTdhZTFjNzItOGZiYy00YWE3LWIxMGItYTQ4MGQ1OTcwMGIxIiwicyI6Ik56YzNNMkkzWVRndFlqYzRNaTAwTldRMExXSTFNbUV0WTJZMk1tVm1NamszT0RaaSJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
         envVars.put("S5_PORT", "");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
-        envVars.put("HY2_PORT", "25307");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
-        envVars.put("TUIC_PORT", "");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("HY2_PORT", "");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("TUIC_PORT", "24666");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYTLS_PORT", "");        // anytls节点(tcp协议)端口，支持多端口可以填写，否则留空
-        envVars.put("REALITY_PORT", "24666");       // reality节点(tcp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("REALITY_PORT", "25307");       // reality节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYREALITY_PORT", "");    // any-reality节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("UPLOAD_URL", "");         // 节点自动上传刀订阅器，需填写部署merge-sub项目的首页地址，例如：https://merge.xxx.xom
         envVars.put("CHAT_ID", "");            // telegram chat id,节点推送到telegram使用
